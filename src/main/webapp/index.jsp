@@ -7,13 +7,6 @@
     <title>ЧупапиМуняня</title>
     <link rel="icon" href="pics/icon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
-<%--    <style>--%>
-<%--        header {--%>
-<%--            font-family: serif;--%>
-<%--            font-size: 12px;--%>
-<%--            color: #00ff00;--%>
-<%--        }--%>
-<%--    </style>--%>
 </head>
 <body>
 <header>
@@ -22,7 +15,7 @@
 </header>
 <div class="content">
     <div class="panel">
-        <form id="pointForm" method="post" action="ControllerServlet">
+        <form id="pointForm" method="post" action="AreaCheckServlet">
             <div class="form-row">
                 <label>X:</label>
                 <input type="text" name="y" id="x" placeholder="От -3 до 5" required pattern="-?[0-3](\.[0-9]+)?"

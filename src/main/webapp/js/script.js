@@ -13,7 +13,7 @@ document.getElementById('pointForm').onsubmit = function (event) {
     }
 
     // If validation passes, send the POST request
-    fetch('ControllerServlet', {
+    fetch('AreaCheckServlet', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
@@ -101,7 +101,7 @@ function sendCoordinatesForVerification(canvasX, canvasY, r) {
     const xValue = (canvasX - offsetX) * (2 * r / canvasWidth / 0.7);
     const yValue = (offsetY - canvasY) * (2 * r / canvasHeight / 0.7);
 
-    fetch('AreaCheckServlet', {
+    fetch('ControllerServlet', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
